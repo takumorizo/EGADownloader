@@ -28,8 +28,7 @@ EGA=
 ### Run ###
 Execute the following script in your shell:
 ```sh
-
-bash /home/moriyama/sftp_scripts/160521_ohvarfinder/src/compRealData/downloadEGA/runEGATools.sh \
+bash {dir to this package}/runEGATools.sh \
 {EGA user email address} {password} \
 {EGA data set id} {output Dir} \
 {encryption key} {meta data run xml dir}
@@ -57,8 +56,7 @@ wc -l {output Dir}/fileList.txt   # same as 1 + number of files in {EGA data set
 ```
 If all the files are not donwloaded, just re-execute in the same way. Our job script tries to download only unsuccessful files, and avoid to download successful files by checking status files.
 ```sh
-
-bash /home/moriyama/sftp_scripts/160521_ohvarfinder/src/compRealData/downloadEGA/runEGATools.sh \
+bash {dir to this package}/runEGATools.sh \
 {EGA user email address} {password} \
 {EGA data set id} {output Dir} \
 {encryption key} {meta data run xml dir}
